@@ -1,11 +1,6 @@
 # Download the official ASP.NET Core SDK image
 # to build the project while creating the docker image
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 as build
-
-ARG SONAR_PROJECT_KEY=robinmanuelthiel_microcommunication
-ARG SONAR_OGRANIZAION_KEY=robinmanuelthiel
-ARG SONAR_HOST_URL=https://sonarcloud.io
-ARG SONAR_TOKEN
+FROM mcr.microsoft.com/dotnet/core/sdk as build
 
 WORKDIR /app
 
