@@ -1,6 +1,6 @@
 # Download the official ASP.NET Core SDK image
 # to build the project while creating the docker image
-FROM mcr.microsoft.com/dotnet/core/sdk as build
+FROM mcr.microsoft.com/dotnet/core/sdk:5.0 as build
 
 WORKDIR /app
 
